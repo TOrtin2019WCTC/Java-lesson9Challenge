@@ -13,16 +13,22 @@ import java.time.LocalDate;
  * @author tim
  */
 public interface Album extends Product {
+      @Override
       public String getTitle();
+      @Override
        public double getCost();
 
+      @Override
     public int getQuantityOnHand();
 
+      @Override
     public LocalDate getReleaseDate();
  public String getArtist();
 
+      @Override
     public void order(int quantity);
  public Duration getPlayingTime();
 
+      @Override
     public String getFormattedReleaseDate();
 }
